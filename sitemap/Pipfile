@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+boto3 = "*"
+requests = "*"
+sqlalchemy = "*"
+pylint = "*"
+sqlalchemy-utils = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

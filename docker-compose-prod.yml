@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  batch-sitemap:
+    build: ./sitemap
+    command: pipenv run python ./generate.py
+    volumes:
+      - ./sitemap:/sitemap
+    ports:
+      - "5001:8000"
+    env_file:
+      - ./sitemap/.env
+    environment:
+      TZ: "Asia/Tokyo"
